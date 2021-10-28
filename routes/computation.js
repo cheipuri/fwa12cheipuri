@@ -6,11 +6,11 @@ router.get('/', function(req, res, next) {
     var x = req.query.x;
   }
   else{
-    var x = Math.atanh(Math.random()*10000);
+    var x = Math.cbrt(Math.random()*10000);
   }
 
   res.render('computation',{
-    result:`Math.atanh applied to ${Math.ceil(x)} is ${x}`
+    result:`Math.cbrt applied to ${Math.ceil(x)} is ${x}`
   })
 });
 
